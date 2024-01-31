@@ -1,0 +1,33 @@
+Timing Information:
+-------------------
+
+Extra Large Array
+-----------------
+Time to run code with push():3.2398 ms
+Time to run code with unshift():600.1039 ms 
+
+Large Array
+-----------
+Time to run code with push():631.8 μs
+Time to run code with unshift():5.8297 ms
+
+Medium Array
+------------
+Time to run code with push():109.5 μs
+Time to run code with unshift(): 114.7 μs
+
+Small Array
+-----------
+Time to run code with push():119.5 μs
+Time to run code with unshift(): 156.1 μs
+
+Tiny Array
+----------
+Time to run code with push(): 65.5 μs
+Time to run code with unshift():47.2 μs
+
+
+1. One of the pattern runtime i noticed is that the bigger the array the faster pushes and the slower it unshift. 
+whereas the tiny array the unshift is faster than the push. This happens because the time complexity of push is 0(1) 
+it adds a new index at the ending of the array and unshift is 0(n) it has to change the index for every item in the array
+the longer the array the longer it will take.
